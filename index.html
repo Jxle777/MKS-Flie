@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>马克思哲学入门研读资料</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 头部导航 -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-book-open"></i>
+                    <h1>马克思哲学入门研读资料</h1>
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav-link active">首页</a>
+                    <a href="#" class="nav-link">资料库</a>
+                    <a href="#" class="nav-link">关于</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 主要内容区域 -->
+        <main class="main-content">
+            <!-- 欢迎区域 -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h2 class="hero-title">探索马克思主义哲学</h2>
+                    <p class="hero-subtitle">深入理解马克思主义理论，掌握科学的世界观和方法论</p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number" id="fileCount">0</span>
+                            <span class="stat-label">资料文件</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" id="folderCount">0</span>
+                            <span class="stat-label">分类目录</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <i class="fas fa-lightbulb"></i>
+                </div>
+            </section>
+
+            <!-- 文件浏览区域 -->
+            <section class="file-browser">
+                <div class="browser-header">
+                    <h3>资料浏览</h3>
+                    <div class="browser-controls">
+                        <button class="btn btn-secondary" id="refreshBtn">
+                            <i class="fas fa-sync-alt"></i>
+                            刷新
+                        </button>
+                        <div class="view-toggle">
+                            <button class="view-btn active" data-view="grid">
+                                <i class="fas fa-th"></i>
+                            </button>
+                            <button class="view-btn" data-view="list">
+                                <i class="fas fa-list"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 面包屑导航 -->
+                <div class="breadcrumb" id="breadcrumb">
+                    <a href="#" class="breadcrumb-item">首页</a>
+                </div>
+
+                <!-- 文件列表 -->
+                <div class="file-list" id="fileList">
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>正在加载资料...</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 底部 -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 马克思哲学入门研读资料. 传承经典，启迪智慧.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 文件预览模态框 -->
+    <div class="modal" id="fileModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modalTitle">文件预览</h3>
+                <button class="modal-close" id="modalClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- 文件内容将在这里显示 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
