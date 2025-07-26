@@ -1,10 +1,10 @@
 ## 技术栈
 
-- **前端**：HTML5 + CSS3 + JavaScript (ES6+)
-- **样式**：CSS Grid + Flexbox + CSS Variables
-- **图标**：Font Awesome 6.0
-- **字体**：Noto Sans SC (Google Fonts)
-- **动画**：CSS3 Animations + Intersection Observer API
+- 前端：HTML5 + CSS3 + JavaScript (ES6+)
+- 样式：CSS Grid + Flexbox + CSS Variables
+- 图标：Font Awesome 6.0
+- 字体：Noto Sans SC (Google Fonts)
+- 动画：CSS3 Animations + Intersection Observer API
 
 ## 文件结构
 
@@ -83,39 +83,3 @@ const iconMap = {
     // 添加新的文件类型...
     'your-extension': 'fas fa-file-your-icon'
 };
-```
-
-## 浏览器兼容性
-
-- Chrome 60+
-- Firefox 55+
-- Safari 12+
-- Edge 79+
-
-## 开发说明
-
-### 当前功能
-- ✅ 文件浏览界面
-- ✅ 文件预览功能
-- ✅ 响应式设计
-- ✅ 动画效果
-- ✅ 错误处理
-
-### 待开发功能
-- 🔄 真实文件系统集成
-- 🔄 文件上传功能
-- 🔄 搜索功能
-- 🔄 用户认证
-- 🔄 文件分享
-
-## 贡献
-
-欢迎提交Issue和Pull Request来改进这个项目！
-
-## 许可证
-
-MIT License
-
----
-
-**传承经典，启迪智慧** - 让马克思主义理论在新时代焕发新的生机！ 
