@@ -151,9 +151,8 @@ MKS-Flie/
 
 ## 联系方式
 
-- 邮箱：contact@mks-philosophy.com
-- 网站：www.mks-philosophy.com
-- GitHub：github.com/mks-philosophy
+- 网页展示邮箱及电话均为测试所用！！！
+- 邮箱：2192323429@qq.com
 
 ---
 
