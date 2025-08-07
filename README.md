@@ -1,85 +1,160 @@
-## 技术栈
+# 马克思哲学入门研读资料
 
-- 前端：HTML5 + CSS3 + JavaScript (ES6+)
-- 样式：CSS Grid + Flexbox + CSS Variables
-- 图标：Font Awesome 6.0
-- 字体：Noto Sans SC (Google Fonts)
-- 动画：CSS3 Animations + Intersection Observer API
+一个现代化的马克思主义哲学学习资料浏览系统，提供系统化的学习资料和便捷的文件管理功能。
+
+## 项目特色
+
+- 🎨 **现代化设计** - 采用红色主题，符合马克思主义特色
+- 📱 **响应式布局** - 支持各种设备访问
+- 📂 **文件浏览** - 直观的文件管理系统
+- 🔍 **分类浏览** - 按主题分类的学习资料
+- 📖 **在线预览** - 支持文本文件在线预览
+- ⚡ **纯前端** - 无需服务器，直接打开即可使用
+
+## 功能模块
+
+### 1. 首页
+- 欢迎介绍
+- 文件统计
+- 文件浏览器
+- 网格/列表视图切换
+
+### 2. 资料库
+- **基础理论** - 唯物论、辩证法、认识论、历史唯物主义
+- **社会理论** - 社会形态、阶级斗争、国家与革命
+- **政治经济学** - 劳动价值论、剩余价值理论、资本积累
+- **科学社会主义** - 社会主义理论、共产主义理想、革命理论
+- **经典著作** - 《共产党宣言》、《资本论》等经典文献
+- **学习方法** - 理论联系实际、批判性思维等
+
+### 3. 关于页面
+- 项目宗旨
+- 资料特色
+- 适用人群
+- 学习建议
+- 技术特点
+- 联系方式
+- 版本信息
+
+## 使用方法
+
+### 方法一：直接打开（推荐）
+1. 下载项目文件
+2. 双击 `index.html` 文件
+3. 在浏览器中打开即可使用
+
+### 方法二：本地服务器
+1. 运行 `start.bat` 文件
+2. 根据提示选择启动方式
+3. 在浏览器中访问对应地址
+
+### 方法三：手动启动服务器
+```bash
+# Python 3
+python -m http.server 8000
+
+# Node.js
+npx http-server -p 8080
+
+# PHP
+php -S localhost:8000
+```
 
 ## 文件结构
 
 ```
+MKS-Flie/
 ├── index.html          # 主页面
 ├── styles.css          # 样式文件
-├── script.js           # JavaScript功能
-└── README.md           # 说明文档
+├── script.js           # 交互功能
+├── start.bat           # 启动脚本
+├── nginx.conf          # Nginx配置
+└── README.md           # 项目说明
 ```
 
-## 使用方法
+## 技术特点
 
-### 1. 直接使用
-直接在浏览器中打开 `index.html` 文件即可查看演示效果。
+- **纯前端实现** - HTML5 + CSS3 + JavaScript
+- **响应式设计** - 支持桌面、平板、手机
+- **现代化UI** - 使用CSS Grid和Flexbox布局
+- **动画效果** - 流畅的交互动画
+- **文件管理** - 模拟文件系统功能
+- **主题设计** - 红色主题，符合项目特色
 
-### 2. 本地服务器
-为了获得最佳体验，建议使用本地服务器：
+## 学习资料分类
 
-```bash
-# 使用Python (如果已安装)
-python -m http.server 8000
+### 基础理论
+- 唯物论与唯心论
+- 辩证法与形而上学
+- 认识论与实践论
+- 历史唯物主义
 
-# 使用Node.js (如果已安装)
-npx http-server
+### 社会理论
+- 社会形态理论
+- 阶级斗争理论
+- 国家与革命理论
+- 社会发展规律
 
-# 使用PHP (如果已安装)
-php -S localhost:8000
-```
+### 政治经济学
+- 劳动价值论
+- 剩余价值理论
+- 资本积累理论
+- 经济危机理论
 
-然后在浏览器中访问 `http://localhost:8000`
+### 科学社会主义
+- 社会主义理论
+- 共产主义理想
+- 革命理论
+- 建设理论
 
-### 3. Nginx配置
-如果想通过Nginx反向代理访问本地目录，可以参考以下配置：
+### 经典著作
+- 《共产党宣言》
+- 《资本论》第一卷
+- 《德意志意识形态》
+- 《哥达纲领批判》
 
-```nginx
-server {
-    listen 80;
-    server_name your-domain.com;
-    
-    location / {
-        root /path/to/your/files;
-        index index.html;
-        autoindex on;
-        autoindex_exact_size off;
-        autoindex_localtime on;
-    }
-    
-    location ~* \.(txt|pdf|doc|docx)$ {
-        root /path/to/your/files;
-        add_header Content-Disposition "inline";
-    }
-}
-```
+### 学习方法
+- 理论联系实际
+- 批判性思维
+- 系统学习方法
+- 实践应用指导
 
-## 自定义配置
+## 浏览器兼容性
 
-### 修改主题颜色
-在 `styles.css` 文件中修改CSS变量：
+- Chrome 60+
+- Firefox 55+
+- Safari 12+
+- Edge 79+
 
-```css
-:root {
-    --primary-red: #d32f2f;        /* 主红色 */
-    --primary-red-dark: #b71c1c;   /* 深红色 */
-    --primary-red-light: #ffcdd2;  /* 浅红色 */
-    /* 其他颜色变量... */
-}
-```
+## 更新日志
 
-### 添加新文件类型
-在 `script.js` 文件中的 `getFileIcon` 函数中添加新的文件类型图标：
+### v1.0.1 (2024-07-14)
+- ✅ 新增资料库分类页面
+- ✅ 完善关于页面内容
+- ✅ 优化页面导航功能
+- ✅ 改进用户界面设计
+- ✅ 修复已知问题
 
-```javascript
-const iconMap = {
-    'pdf': 'fas fa-file-pdf',
-    'doc': 'fas fa-file-word',
-    // 添加新的文件类型...
-    'your-extension': 'fas fa-file-your-icon'
-};
+### v1.0.0 (2024-07-14)
+- ✅ 初始版本发布
+- ✅ 基础文件浏览功能
+- ✅ 响应式设计
+- ✅ 文件预览功能
+
+## 贡献指南
+
+欢迎提交Issue和Pull Request来改进项目！
+
+## 许可证
+
+本项目采用 MIT 许可证。
+
+## 联系方式
+
+- 邮箱：contact@mks-philosophy.com
+- 网站：www.mks-philosophy.com
+- GitHub：github.com/mks-philosophy
+
+---
+
+**传承经典，启迪智慧** - 让我们一起学习马克思主义哲学，掌握科学的世界观和方法论！
