@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>马克思哲学入门研读资料</title>
+    <title>马克思主义哲学入门研读资料库</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,11 +15,10 @@
             <div class="header-content">
                 <div class="logo">
                     <i class="fas fa-book-open"></i>
-                    <h1>马克思哲学入门研读资料</h1>
+                    <h1>马克思主义哲学入门研读资料库</h1>
                 </div>
                 <nav class="nav">
                     <a href="#" class="nav-link active" data-page="home">首页</a>
-                    <a href="#" class="nav-link" data-page="library">资料库</a>
                     <a href="#" class="nav-link" data-page="about">关于</a>
                 </nav>
             </div>
@@ -33,7 +32,7 @@
                 <section class="hero-section">
                     <div class="hero-content">
                         <h2 class="hero-title">探索马克思主义哲学</h2>
-                        <p class="hero-subtitle">深入理解马克思主义理论，掌握科学的世界观和方法论</p>
+                        <p class="hero-subtitle">系统化的马克思主义理论学习资料，包含经典原著、哲学史、文集等丰富内容</p>
                         <div class="hero-stats">
                             <div class="stat-item">
                                 <span class="stat-number" id="fileCount">0</span>
@@ -85,130 +84,7 @@
                 </section>
             </div>
 
-            <!-- 资料库页面 -->
-            <div id="library-page" class="page-content">
-                <section class="hero-section">
-                    <div class="hero-content">
-                        <h2 class="hero-title">资料库</h2>
-                        <p class="hero-subtitle">系统化的马克思主义哲学学习资料，按主题分类整理</p>
-                    </div>
-                    <div class="hero-image">
-                        <i class="fas fa-database"></i>
-                    </div>
-                </section>
-
-                <section class="library-content">
-                    <div class="category-grid">
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <i class="fas fa-book"></i>
-                            </div>
-                            <h3>基础理论</h3>
-                            <p>马克思主义哲学的基本原理和核心概念</p>
-                            <ul>
-                                <li>唯物论与唯心论</li>
-                                <li>辩证法与形而上学</li>
-                                <li>认识论与实践论</li>
-                                <li>历史唯物主义</li>
-                            </ul>
-                            <button class="btn btn-primary" onclick="loadCategory('basic')">
-                                <i class="fas fa-arrow-right"></i>
-                                进入学习
-                            </button>
-                        </div>
-
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <h3>社会理论</h3>
-                            <p>马克思主义关于社会发展的理论体系</p>
-                            <ul>
-                                <li>社会形态理论</li>
-                                <li>阶级斗争理论</li>
-                                <li>国家与革命理论</li>
-                                <li>社会发展规律</li>
-                            </ul>
-                            <button class="btn btn-primary" onclick="loadCategory('social')">
-                                <i class="fas fa-arrow-right"></i>
-                                进入学习
-                            </button>
-                        </div>
-
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <i class="fas fa-industry"></i>
-                            </div>
-                            <h3>政治经济学</h3>
-                            <p>马克思主义政治经济学的核心理论</p>
-                            <ul>
-                                <li>劳动价值论</li>
-                                <li>剩余价值理论</li>
-                                <li>资本积累理论</li>
-                                <li>经济危机理论</li>
-                            </ul>
-                            <button class="btn btn-primary" onclick="loadCategory('economics')">
-                                <i class="fas fa-arrow-right"></i>
-                                进入学习
-                            </button>
-                        </div>
-
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <h3>科学社会主义</h3>
-                            <p>社会主义和共产主义的理论与实践</p>
-                            <ul>
-                                <li>社会主义理论</li>
-                                <li>共产主义理想</li>
-                                <li>革命理论</li>
-                                <li>建设理论</li>
-                            </ul>
-                            <button class="btn btn-primary" onclick="loadCategory('socialism')">
-                                <i class="fas fa-arrow-right"></i>
-                                进入学习
-                            </button>
-                        </div>
-
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <i class="fas fa-history"></i>
-                            </div>
-                            <h3>经典著作</h3>
-                            <p>马克思主义经典作家的代表性著作</p>
-                            <ul>
-                                <li>《共产党宣言》</li>
-                                <li>《资本论》</li>
-                                <li>《德意志意识形态》</li>
-                                <li>《哥达纲领批判》</li>
-                            </ul>
-                            <button class="btn btn-primary" onclick="loadCategory('classics')">
-                                <i class="fas fa-arrow-right"></i>
-                                进入学习
-                            </button>
-                        </div>
-
-                        <div class="category-card">
-                            <div class="category-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <h3>学习方法</h3>
-                            <p>马克思主义理论学习的有效方法</p>
-                            <ul>
-                                <li>理论联系实际</li>
-                                <li>批判性思维</li>
-                                <li>系统学习方法</li>
-                                <li>实践应用指导</li>
-                            </ul>
-                            <button class="btn btn-primary" onclick="loadCategory('methods')">
-                                <i class="fas fa-arrow-right"></i>
-                                进入学习
-                            </button>
-                        </div>
-                    </div>
-                </section>
-            </div>
+            
 
             <!-- 关于页面 -->
             <div id="about-page" class="page-content">
@@ -241,17 +117,6 @@
                         </div>
 
                         <div class="about-card">
-                            <h3><i class="fas fa-users"></i> 适用人群</h3>
-                            <ul>
-                                <li>马克思主义理论研究者</li>
-                                <li>哲学专业学生</li>
-                                <li>政治理论工作者</li>
-                                <li>对马克思主义感兴趣的各界人士</li>
-                                <li>希望提高理论素养的读者</li>
-                            </ul>
-                        </div>
-
-                        <div class="about-card">
                             <h3><i class="fas fa-lightbulb"></i> 学习建议</h3>
                             <ul>
                                 <li>保持开放和批判的思维</li>
@@ -262,24 +127,13 @@
                             </ul>
                         </div>
 
-                        <div class="about-card">
-                            <h3><i class="fas fa-code"></i> 技术特点</h3>
-                            <ul>
-                                <li>纯前端静态网页，无需服务器</li>
-                                <li>响应式设计，支持各种设备</li>
-                                <li>现代化UI设计，用户体验优良</li>
-                                <li>文件浏览功能，便于资料管理</li>
-                                <li>开源项目，欢迎贡献改进</li>
-                            </ul>
-                        </div>
 
                         <div class="about-card">
                             <h3><i class="fas fa-heart"></i> 联系我们</h3>
                             <p>如果您有任何建议、意见或问题，欢迎通过以下方式联系我们：</p>
                             <div class="contact-info">
-                                <p><i class="fas fa-envelope"></i> 邮箱：contact@mks-philosophy.com</p>
-                                <p><i class="fas fa-globe"></i> 网站：www.mks-philosophy.com</p>
-                                <p><i class="fas fa-github"></i> GitHub：github.com/mks-philosophy</p>
+                                <p><i class="fas fa-envelope"></i> 邮箱：3282484329@qq.com</p>
+                                <p><i class="fab fa-github"></i> GitHub：github.com/Jxle777/MKS-Flie</p>
                             </div>
                         </div>
                     </div>
@@ -287,10 +141,9 @@
                     <div class="version-info">
                         <h3>版本信息</h3>
                         <p><strong>当前版本：</strong>v1.0.1</p>
-                        <p><strong>更新日期：</strong>2024年7月14日</p>
+                        <p><strong>更新日期：</strong>2025年8月8日</p>
                         <p><strong>更新内容：</strong></p>
                         <ul>
-                            <li>新增资料库分类页面</li>
                             <li>完善关于页面内容</li>
                             <li>优化页面导航功能</li>
                             <li>改进用户界面设计</li>
@@ -324,6 +177,7 @@
         </div>
     </div>
 
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html> 
